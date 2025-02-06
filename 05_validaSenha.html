@@ -8,15 +8,16 @@
 
     //ENTRADA
 
-    let senha;
+    let senha = "";
     
-    do {
-        if (senha != undefined) alert("Senha inválida") ;
-        senha = Number(prompt("Informe").replaceAll(" ", ""));
-    } while (senha % 1 != 0 || senha === 0);
+    
 
     //PROCESSAMENTO
-
+    
+    do {
+        if (String(senha)) alert("Senha inválida") ;
+        senha = Number(prompt("Informe").replaceAll(" ", ""));
+    } while (senha % 1 != 0 || senha === 0);
 
     //SAÍDA
 
