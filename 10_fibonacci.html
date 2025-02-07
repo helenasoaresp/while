@@ -5,11 +5,17 @@
     */
 
     //ENTRADA
+    let sequenciaFibonacci = Number(prompt("Quantos números da sequência de Fibonacci deseja obter?"));
+    let fibonacci = [0, 1];
 
 
     //PROCESSAMENTO
-
+    while (sequenciaFibonacci > 0) {
+        fibonacci.push(fibonacci[fibonacci.length - 2] + fibonacci[fibonacci.length - 1]);
+        sequenciaFibonacci--
+    }
 
     //SAÍDA
-    
+    alert(`Sequência de Fibonacci até o número de sequência ${fibonacci.length - 2}:  ${fibonacci.join(", ")}`)
+
 </script>

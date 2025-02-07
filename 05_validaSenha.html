@@ -3,21 +3,21 @@
     /*
     PROBLEMA: VALIDAR SENHA
     Faça um programa que receba uma senha formada de quatro números inteiros, verifique se a senha está correta e, caso não esteja, 
-    solicite novamente a senha. Se a senha entrada for a correta, deverá ser apresentada a mensagem “Senha Correta”, caso contrário, “Senha Incorreta”.
+    solicite novamente a senha. Se a senha entrada for a correta, deverá ser apresentada a mensagem “Senha Correta”, caso contrário,
+    “Senha Incorreta”.
     */
 
     //ENTRADA
-
-    let senha = "";
+    let senha;
     
-    
-
     //PROCESSAMENTO
-    
     do {
-        if (String(senha)) alert("Senha inválida") ;
-        senha = Number(prompt("Informe").replaceAll(" ", ""));
-    } while (senha % 1 != 0 || senha === 0);
+        if (senha !== undefined) alert("Senha Incorreta");
+        senha = prompt("Informe uma senha").replaceAll(" ", "");
+    } while (!/^\d{4}$/.test(senha));
+
+    //SAÍDA
+    alert("Senha Correta");
 
     //SAÍDA
 
