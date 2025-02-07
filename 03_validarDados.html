@@ -29,9 +29,8 @@
         !["s", "c", "v", "d"].includes(civil) && "Estado civil inválido! Use 's', 'c', 'v' ou 'd'."
     ].filter(Boolean);
 
-    alert(erros.join("\n")); 
-
-    } while (erros);
+    if (erros.length > 0 ) alert(`Erros encontrados:\n` + erros.join("\n"));
+    } while (erros.length > 0);
     
     //SAÍDA
 
